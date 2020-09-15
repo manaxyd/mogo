@@ -1,0 +1,58 @@
+1600172686a:1:{s:8:"post.htm";a:11:{s:8:"fileName";s:8:"post.htm";s:7:"content";s:888:"title = "Blog Post Mogo"
+url = "/post/:slug"
+layout = "default"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "home"
+
+[commentsPost]
+==
+<?php
+function onEnd()
+{
+    if (!$this->post)
+        return App::make('Cms\Classes\Controller')->setStatusCode(404)->run('/404');
+}
+?>
+==
+<section class="section section--post">
+    <div class="container" data-aos="fade-up" data-aos-easing="linear">
+        <div class="section_inner">
+            <div class="section_intro">
+                <h2 class="section_title">{{ post.title }}</h2>
+                <p class="section_text">
+                    {{ post.excerpt }}
+                </p>        
+            </div>
+            <div class="post_body">
+                {{ post.content_html|raw }}
+            </div>
+
+            {% component 'commentsPost' %}
+
+        </div>
+    </div>
+</section>";s:5:"mtime";i:1600156405;s:6:"markup";s:577:"<section class="section section--post">
+    <div class="container" data-aos="fade-up" data-aos-easing="linear">
+        <div class="section_inner">
+            <div class="section_intro">
+                <h2 class="section_title">{{ post.title }}</h2>
+                <p class="section_text">
+                    {{ post.excerpt }}
+                </p>        
+            </div>
+            <div class="post_body">
+                {{ post.content_html|raw }}
+            </div>
+
+            {% component 'commentsPost' %}
+
+        </div>
+    </div>
+</section>";s:4:"code";s:131:"function onEnd()
+{
+    if (!$this->post)
+        return App::make('Cms\Classes\Controller')->setStatusCode(404)->run('/404');
+}";s:5:"title";s:14:"Blog Post Mogo";s:3:"url";s:11:"/post/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:4:"home";}s:12:"commentsPost";a:0:{}}}

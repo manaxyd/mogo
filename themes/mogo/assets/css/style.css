@@ -40,6 +40,12 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 100;
 }
 
+.header.active {
+    background-color: #e58680;
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
 .header.fixed {
     position: fixed;
     background-color: #e58680;
@@ -273,7 +279,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 20px auto;
+    padding: 20px 0;
     max-width: 1200px;
     position: absolute;
 }
@@ -311,6 +317,10 @@ section {
     width: 100%;
 }
 
+.section--post {
+    padding-top: 100px;
+}
+
 .section_inner {
     text-align: center;
     margin-bottom: 90px;
@@ -319,7 +329,7 @@ section {
 
 .section_intro {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .section_sup_title {
@@ -986,6 +996,28 @@ section {
     height: 15px;
 }
 
+.post_body {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5em;
+    color: #464646;
+}
+
+.post_body img {
+    max-width: 100%;
+}
+
+.comments-block {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrap-comment-form {
+    padding-bottom: 30px;
+}
+
 /* Open map */
 
 .section_title--open_map {
@@ -1126,6 +1158,11 @@ section {
     font-weight: 700;
     padding: 14px 34px;
     cursor: pointer;
+}
+
+.subscribe_btn:hover {
+    background-color: #ffffff;
+    color: #95e1d3;
 }
 
 .footer_block--blog {

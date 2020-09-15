@@ -1,0 +1,195 @@
+1600172686a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:3942:"description = "Default layout"
+==
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ this.page.title }}</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
+        {% styles %}
+    </head>
+    <body>
+        <header id="header" class="header {% if this.page.id != 'home' %} active {% endif %}">
+            {% partial 'header' %}
+        </header>
+        
+        
+        {% page %}
+
+        <footer>
+            {% partial 'footer' %}
+        </footer>
+
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{{ 'assets/js/app.js'|theme }}"></script>
+        <script src="{{ 'assets/js/jquery.instagramFeed.min.js'|theme }}"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/64a3499a60.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+        <script>
+            AOS.init({
+                offset: 200,
+                duration: 900,
+                delay: 100,
+                disable: function () {
+                    var maxWidth = 768;
+                    return window.innerWidth < maxWidth;
+                }
+            });
+        </script>
+
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            setWrapperSize: false,
+            virtualTranslate: false,
+            spaceBetween: 50,
+
+            // If we need pagination
+            /* pagination: {
+                el: '.swiper-pagination',
+            },*/
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            /* scrollbar: {
+                el: '.swiper-scrollbar',
+            },*/
+            });
+        </script>
+        <script>
+            (function ($) {
+                $(window).on('load', function () {
+                    $.instagramFeed({
+                        'username': 'tickets_travel_ua', //Имя пользователя
+                        'container': "#instafeed", //Контейнер для изображений
+                        'display_profile': false, //Отображение профиля
+                        'display_biography': true, //Отображение биографии
+                        'display_gallery': true, //Отображение галереи
+                        'styling': true, //Стандартные стили библиотеки
+                        'items': 8, //Количество изображений в галереи
+                        'items_per_row': 4, //Количество изображений в ряд
+                        'margin': 0.5 //Отступ между изображениями
+                    });
+                });
+            })(jQuery);
+        </script>
+
+    {% framework extras %}
+    {% scripts %}
+
+    </body>
+</html>";s:5:"mtime";i:1599814600;s:6:"markup";s:3906:"<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ this.page.title }}</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
+        {% styles %}
+    </head>
+    <body>
+        <header id="header" class="header {% if this.page.id != 'home' %} active {% endif %}">
+            {% partial 'header' %}
+        </header>
+        
+        
+        {% page %}
+
+        <footer>
+            {% partial 'footer' %}
+        </footer>
+
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{{ 'assets/js/app.js'|theme }}"></script>
+        <script src="{{ 'assets/js/jquery.instagramFeed.min.js'|theme }}"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/64a3499a60.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+        <script>
+            AOS.init({
+                offset: 200,
+                duration: 900,
+                delay: 100,
+                disable: function () {
+                    var maxWidth = 768;
+                    return window.innerWidth < maxWidth;
+                }
+            });
+        </script>
+
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            setWrapperSize: false,
+            virtualTranslate: false,
+            spaceBetween: 50,
+
+            // If we need pagination
+            /* pagination: {
+                el: '.swiper-pagination',
+            },*/
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            /* scrollbar: {
+                el: '.swiper-scrollbar',
+            },*/
+            });
+        </script>
+        <script>
+            (function ($) {
+                $(window).on('load', function () {
+                    $.instagramFeed({
+                        'username': 'tickets_travel_ua', //Имя пользователя
+                        'container': "#instafeed", //Контейнер для изображений
+                        'display_profile': false, //Отображение профиля
+                        'display_biography': true, //Отображение биографии
+                        'display_gallery': true, //Отображение галереи
+                        'styling': true, //Стандартные стили библиотеки
+                        'items': 8, //Количество изображений в галереи
+                        'items_per_row': 4, //Количество изображений в ряд
+                        'margin': 0.5 //Отступ между изображениями
+                    });
+                });
+            })(jQuery);
+        </script>
+
+    {% framework extras %}
+    {% scripts %}
+
+    </body>
+</html>";s:4:"code";N;s:11:"description";s:14:"Default layout";}}

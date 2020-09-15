@@ -1,0 +1,32 @@
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "blog"
+postsPerPage = 3
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "home"
+postPage = "post"
+==
+{% set posts = blogPosts.posts %}
+<div class="blog">
+    {% for post in posts %}
+    <div class="post">
+        <div class="post_picture">
+            <a href="{{ post.url }}">
+                {% for image in post.featured_images| slice(0, 1) %}
+                <img class="post_img" src="{{ image.path }}" alt="{{ post.title }}">
+                {% endfor %}
+            </a>
+            <div class="post_date"><span>{{ post.published_at|date('d') }}</span>{{ post.published_at|date('M') }}</div>
+        </div>
+        <div class="post_title">{{ post.title }}</div>
+        <div class="post_exerpt">{{ post.excerpt }}</div>
+        <div class="post_activity">
+            <div class="post_views">{{ post.views }}</div>
+            <div class="post_comments">70</div>
+        </div>
+    </div>
+    {% else %}
+        {{ noPostsMessage }}
+    {% endfor %}
+</div>
