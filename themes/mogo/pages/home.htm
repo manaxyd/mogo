@@ -1,8 +1,11 @@
 title = "Mogo Homepage"
 url = "/"
 layout = "default"
+is_hidden = 0
+
+[contenteditor]
 ==
-    <div class="m-menu" id="nav_toogle_menu">
+<div class="m-menu" id="nav_toogle_menu">
         <div class="close" id="close">
             <i class="fas fa-times"></i>
         </div>
@@ -21,7 +24,7 @@ layout = "default"
                     Creative Tamlate
                 </div>
                 <div class="text_intro">
-                    Welcome to MoGo
+                    {% component 'contenteditor' file="intro/title.htm" fixture="h1" %}
                 </div>
                 <a href="#" class="btn">Learn More</a>
             </div>

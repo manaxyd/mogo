@@ -1,8 +1,11 @@
-1600172686a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:30974:"title = "Mogo Homepage"
+1600419298a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:31056:"title = "Mogo Homepage"
 url = "/"
 layout = "default"
+is_hidden = 0
+
+[contenteditor]
 ==
-    <div class="m-menu" id="nav_toogle_menu">
+<div class="m-menu" id="nav_toogle_menu">
         <div class="close" id="close">
             <i class="fas fa-times"></i>
         </div>
@@ -21,7 +24,7 @@ layout = "default"
                     Creative Tamlate
                 </div>
                 <div class="text_intro">
-                    Welcome to MoGo
+                    {% component 'contenteditor' file="intro/title.htm" fixture="h1" %}
                 </div>
                 <a href="#" class="btn">Learn More</a>
             </div>
@@ -484,7 +487,7 @@ layout = "default"
             </div>
         </div>
     </section>
-    <!-- footer --><!-- footer end -->";s:5:"mtime";i:1599811984;s:6:"markup";s:30910:"<div class="m-menu" id="nav_toogle_menu">
+    <!-- footer --><!-- footer end -->";s:5:"mtime";i:1600418693;s:6:"markup";s:30962:"<div class="m-menu" id="nav_toogle_menu">
         <div class="close" id="close">
             <i class="fas fa-times"></i>
         </div>
@@ -503,7 +506,7 @@ layout = "default"
                     Creative Tamlate
                 </div>
                 <div class="text_intro">
-                    Welcome to MoGo
+                    {% component 'contenteditor' file="intro/title.htm" fixture="h1" %}
                 </div>
                 <a href="#" class="btn">Learn More</a>
             </div>
@@ -966,4 +969,4 @@ layout = "default"
             </div>
         </div>
     </section>
-    <!-- footer --><!-- footer end -->";s:4:"code";N;s:5:"title";s:13:"Mogo Homepage";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";}}
+    <!-- footer --><!-- footer end -->";s:4:"code";N;s:5:"title";s:13:"Mogo Homepage";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:13:"contenteditor";a:0:{}}}

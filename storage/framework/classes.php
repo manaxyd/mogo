@@ -42,4 +42,8 @@
   'RainLab\\User\\Facades\\Auth' => 'plugins\\rainlab\\user\\facades\\Auth.php',
   'RainLab\\User\\Classes\\AuthManager' => 'plugins\\rainlab\\user\\classes\\AuthManager.php',
   'RainLab\\User\\Models\\Settings' => 'plugins\\rainlab\\user\\models\\Settings.php',
+  'samuell\\contenteditor\\Plugin' => 'plugins\\samuell\\contenteditor\\Plugin.php',
+  'Samuell\\ContentEditor\\Components\\ContentEditor' => 'plugins\\samuell\\contenteditor\\components\\ContentEditor.php',
+  'Samuell\\ContentEditor\\Models\\Settings' => 'plugins\\samuell\\contenteditor\\models\\Settings.php',
+  'Samuell\\ContentEditor\\Http\\Controllers\\AdditionalStylesController' => 'plugins\\samuell\\contenteditor\\http\\controllers\\AdditionalStylesController.php',
 );
